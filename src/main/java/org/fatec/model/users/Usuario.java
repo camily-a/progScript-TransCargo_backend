@@ -1,4 +1,4 @@
-package org.fatec.model;
+package org.fatec.model.users;
 
 import lombok.Data;
 import org.fatec.validator.DocumentConstraint;

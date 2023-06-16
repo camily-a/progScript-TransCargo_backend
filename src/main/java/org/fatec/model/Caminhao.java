@@ -3,7 +3,6 @@ package org.fatec.model;
 import lombok.*;
 
 import javax.persistence.*;
-import java.time.Year;
 
 @AllArgsConstructor
 @ToString

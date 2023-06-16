@@ -1,19 +1,17 @@
-package org.fatec.model;
+package org.fatec.model.users;
 
 import lombok.*;
 import org.fatec.validator.DocumentConstraint;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.time.Year;
+import javax.persistence.*;
 
 @AllArgsConstructor
 @ToString
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity( name = "TC_PESSOA")
+@MappedSuperclass
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Pessoa {
 
         @Id

@@ -1,10 +1,8 @@
-package org.fatec.model;
+package org.fatec.model.users;
 
 import lombok.*;
-import org.fatec.validator.DocumentConstraint;
 
 import javax.persistence.*;
-import java.time.Year;
 
 @AllArgsConstructor
 @ToString
@@ -13,6 +11,7 @@ import java.time.Year;
 @Setter
 @Entity
 @Table(name = "TC_CLIENTE")
+@PrimaryKeyJoinColumn(name = "tc_pessoa_id")
 public class Cliente extends Pessoa {
 
         @Column(name = "PERMITE_NOTIFICACOES", nullable = false)

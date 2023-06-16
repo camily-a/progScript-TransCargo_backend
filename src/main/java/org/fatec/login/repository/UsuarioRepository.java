@@ -1,7 +1,7 @@
 package org.fatec.login.repository;
 
 
-import org.fatec.model.Usuario;
+import org.fatec.model.users.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

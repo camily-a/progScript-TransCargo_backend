@@ -1,9 +1,7 @@
 package org.fatec.login;
 
 import org.fatec.login.repository.UsuarioRepository;
-import org.fatec.model.Cliente;
-import org.fatec.model.Usuario;
-import org.fatec.repository.ClienteRepository;
+import org.fatec.model.users.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -12,9 +10,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
